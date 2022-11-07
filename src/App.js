@@ -5,8 +5,11 @@ function App() {
   
   return (
     <div className="App">
-      <div>
-        {counters.length < 3 && <button onClick={()=> {
+      <header>
+        <h1>React Counter</h1>
+      </header>
+      <div className='body-container'>
+        {counters.length < 3 && <button className='button' onClick={()=> {
          const newTab = [...counters];
          newTab.push(0);
          setCounters(newTab);
@@ -16,7 +19,7 @@ function App() {
 
         <div className='counters-div'>
         {counters.map((counter, index)=>{
-          return <div>
+          return <div className='count'>
             {counter > 0 ?<button onClick={()=>{
           const newTab = [...counters];
           newTab[index]= newTab[index] -1;

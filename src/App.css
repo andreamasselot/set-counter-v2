@@ -1,3 +1,39 @@
 #root {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.body-container{
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+font-size: 30px;
+
+}
+header{
+  padding: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+.counters-div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button{
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.button{
+ 
+  border: none;
+  border-radius: 5px;
+}
+.count{
+  display: flex;
+  gap: 10px;
 }
